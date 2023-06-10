@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 h1 {
@@ -31,18 +31,19 @@ h1 {
 .mid {
     display: flex;
     flex-direction: row;
+    margin: 1rem;
 }
 
-img {
+.image {
     width: 10rem;
     height: auto;
-    margin: 1rem;
+    margin: 0.5rem;
     border: 0.2rem solid grey;
     border-radius: 0.5rem;
 }
 
 .image {
-    width: calc(25% - 2rem)
+    width: calc(25% - 1rem)
     }
 
 @media only screen and (max-width: 768px) {
@@ -50,18 +51,115 @@ img {
         flex-wrap: wrap;
     }
     .image {
-    width: calc(50% - 2rem)
+    width: calc(50% - 1rem);
     }
 }
 
 .btn {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: white;
     background-color: black;
     border: none;
     border-radius: 1.4rem;
-    padding: 0.3rem 1rem 0.3rem 1rem;
-    margin: 1rem;
-    width: 100%;
+    padding: 0.3rem 4rem 0.3rem 4rem;
+    margin: 1rem 5rem 1rem 5rem;
 }
 
+/* chooseGoal page */
+
+.step {
+    text-align: center;
+    margin: 1rem;
+    font-size: 0.8rem;
+}
+
+
+.midGoal {
+    display: flex;
+}
+
+.imageG {
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+    margin-bottom: 0rem;
+}
+
+.lossGoal, .gainGoal {
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid black;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+input[type=radio] {
+    height: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ChooseSex Page */
+
+.chooseSex {
+    margin: 1rem 1rem -1rem 1rem;
+}
+
+.birthDate {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=date] {
+    margin: 1rem;
+}
+
+/* ChooseMetrics Page */
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    height: 2rem;
+    width: 20rem;
+    margin: 1rem;
+}
+
+/* chooseDiet page */
+
+.dietSelect, .lifeSelect {
+    display: flex;
+    flex-direction: column;
+}
+
+.diet, .life {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.dietImage, .lifeImage {
+    display: flex;
+    align-items: center;
+}
+
+.imageD, .imageL {
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+}
+
+#diet, #life {
+    margin: 0 0 0 2rem;
+}
+
+/* chooseLifestyle */
