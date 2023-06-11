@@ -18,14 +18,16 @@ body {
 }
 
 h1 {
-    color: rgb(97, 97, 97);
+    color: rgb(142, 142, 142);
     text-align: center;
     margin: 1rem;
+    font-weight: normal;
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: black;
+    font-weight: 600;
 }
 
 .mid {
@@ -35,16 +37,34 @@ h1 {
 }
 
 .image {
-    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
     height: auto;
     margin: 0.5rem;
-    border: 0.2rem solid grey;
+    border: 0.15rem solid rgb(224, 224, 224);
+    background-color: aliceblue;
     border-radius: 0.5rem;
+    align-items: center;
+}
+
+.imageDC {
+    width: 7rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.dC {
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .image {
     width: calc(25% - 1rem)
     }
+
 
 @media only screen and (max-width: 768px) {
     .mid {
@@ -65,6 +85,43 @@ h1 {
     margin: 1rem 5rem 1rem 5rem;
 }
 
+/* createAccount page */
+
+.account {
+    display: flex;
+    flex-direction: column;
+}
+
+.email, .password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailLabel {
+    margin-top: 2rem;
+    margin-bottom: -0.6rem;
+}
+
+.passwordLabel {
+    margin-bottom: -0.6rem;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.termsLabel {
+    font-size: 0.7rem;
+}
+
+#terms {
+    margin: 0 0.5rem 0 0;
+}
+
 /* chooseGoal page */
 
 .step {
@@ -79,23 +136,30 @@ h1 {
 }
 
 .imageG {
-    width: 6rem;
+    width: 3rem;
     height: auto;
-    margin: 1rem;
-    margin-bottom: 0rem;
+    margin: 1.5rem 2rem 0.5rem 2rem;
+    /* margin-bottom: 0rem; */
 }
 
 .lossGoal, .gainGoal {
     display: flex;
     flex-direction: column;
-    border: 0.2rem solid black;
+    align-items: center;
+    border: 0.15rem solid rgb(224, 224, 224);
+    background-color: aliceblue;
     margin: 1rem;
     border-radius: 0.5rem;
 }
 
+.sex, .goal {
+    font-weight: 600;
+    margin: 0.5rem 1rem 0 1rem;
+}
+
 input[type=radio] {
     height: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 /* ChooseSex Page */
@@ -121,13 +185,14 @@ input[type=date] {
     align-items: center;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     height: 2rem;
     width: 20rem;
     margin: 1rem;
 }
 
 /* chooseDiet page */
+/* chooseLifestyle */
 
 .dietSelect, .lifeSelect {
     display: flex;
@@ -135,13 +200,14 @@ input[type=text] {
 }
 
 .diet, .life {
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
-    border: 0.1rem solid black;
+    border: 0.15rem solid rgb(224, 224, 224);
+    background-color: aliceblue;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -162,4 +228,19 @@ input[type=text] {
     margin: 0 0 0 2rem;
 }
 
-/* chooseLifestyle */
+/* chooseWLorWGGoal */
+
+h2 {
+    text-align: center;
+}
+
+input[type=range] {
+    width: 20rem;
+}
+
+/* summary page */
+
+.summary {
+    width: 80%;
+}
+
